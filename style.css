@@ -1,3 +1,6 @@
+/* Manrope font */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 /* Color variables */
 :root {
   --rich-black: #001219ff;
@@ -5,6 +8,8 @@
   --dark-cyan: #0a9396ff;
   --tiffany-blue: #94d2bdff;
   --vanilla: #e9d8a6ff;
+  --dutch-white: #EFE2BE;
+  --parchment: #F3E9CE;
   --gamboge: #ee9b00ff;
   --alloy-orange: #ca6702ff;
   --rust: #bb3e03ff;
@@ -14,74 +19,93 @@
 
 /* Remove margin / padding */
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Manrope', Arial, sans-serif;
 }
 
 /*testing the style sheet is connected*/
 body {
-  background-color: var(--rust);
+  background-color: var(--vanilla);
 }
 
-header, footer {
-    background-color: var(--rich-black);
-    padding: 12px 24px;
-    color: white;
+header,
+footer {
+  background-color: var(--rufous);
+  padding: 8px 24px;
+  color: var(--parchment);
+  border: 8px solid var(--auburn);
 }
 
 nav ul a {
-    color: var(--gamboge);
-    padding: 0px 20px;
+  color: var(--parchment);
+  padding: 0px 20px;
 }
 #body-section {
-    background-color: var(--dark-cyan);
-    margin: 24px;
-    border: 2px solid var(--rich-black)
+  margin: 12px;
+  background-color: var(--dutch-white);
 }
 
 #hero {
-    text-align: center;
-    background-color: var(--midnight-green);
-    padding: 10px;
-    border: 2px solid var(--rich-black);
-    margin: 2px;
+  text-align: center;
+  padding: 10px;
+  margin: 2px;
 }
 
 .home-card {
-    padding: 10px;
-    border: 2px solid var(--rich-black);
-    margin: 2px 8px;
+  padding: 10px;
+  border: 2px solid var(--rich-black);
+  margin: 2px 8px;
 }
 
 h1 {
-    font-size: 40px;
+  font-size: 60px;
+  font-weight: 200;
+  text-decoration: underline var(--auburn);
+  text-decoration-thickness: 2px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  margin: -15px 0px 0px 0px;
 }
 
 #basics {
-    background-color: var(--tiffany-blue);
+  background-color: var(--midnight-green);
 }
 
 #selectors {
-    background-color: var(--vanilla);
+  background-color: var(--dark-cyan);
 }
 
 #typography {
-    background-color: var(--gamboge);
+  background-color: var(--tiffany-blue);
 }
 
 #flexbox {
-    background-color: var(--alloy-orange);
+  background-color: var(--gamboge);
 }
 
 #grid {
-    background-color: var(--rufous);
+  background-color: var(--alloy-orange);
 }
 
 #animation {
-    background-color: var(--auburn);
+  background-color: var(--rust);
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #basics {
+    background-color: var(--tiffany-blue);
+  }
+  #typography {
+    background-color: var(--midnight-green);
+  }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
 }
