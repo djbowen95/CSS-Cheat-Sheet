@@ -3,7 +3,7 @@ Display (inline, block, none)
 Box model (padding, margin, border)
 Position (relative, absolute, fixed)
 
-Fancy boxes: rounded boxes
+Fancy boxes: rounded boxes, shadow
 
 What's next:
 Responsive design (media queries, flexbox, grid)
